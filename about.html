@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link href="./css/journal.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="./js/scripts.js"></script> -->
+  <title>MaxoSmith Journal</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/ijppi_logo.png" width="240px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-item">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-search" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">MaxoSmith Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Journals</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise With Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscription</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <!-- <div class="dropdown">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="hugenerd"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1 user-name">User_Name</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark text-small shadow"
+                aria-labelledby="dropdownUser1"
+              >
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid wrapper-container">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 p-0 left-nav">
+        <div class="d-flex flex-column align-items-center align-items-sm-start text-white min-vh-100">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link align-middle">
+                <i class="bi bi-house-door"></i>
+                <span class="ms-1 d-none d-sm-inline">Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" class="nav-link align-middle">
+                <i class="bi bi-file-earmark-person"></i>
+                <span class="ms-1 d-none d-sm-inline">About</span></a>
+            </li>
+            <li>
+              <a href="current.html" class="nav-link align-middle">
+                <i class="bi bi-file-earmark-text"></i>
+                <span class="ms-1 d-none d-sm-inline">Current</span>
+              </a>
+            </li>
+            <li>
+              <a href="archives.html" class="nav-link align-middle">
+                <i class="bi bi-archive"></i>
+                <span class="ms-1 d-none d-sm-inline">Archives</span>
+              </a>
+            </li>
+            <li>
+              <a href="authorguidelines.html" class="nav-link align-middle">
+                <i class="bi bi-journal-bookmark-fill"></i>
+                <span class="ms-1 d-none d-sm-inline">Author Guidelines</span>
+              </a>
+            </li>
+            <li>
+              <a href="editorialboard.html" class="nav-link align-middle">
+                <i class="bi bi-journal-album"></i>
+                <span class="ms-1 d-none d-sm-inline">Editorial Board</span>
+              </a>
+            </li>
+            <li>
+              <a href="submissions.html" class="nav-link align-middle">
+                <i class="bi bi-folder-check"></i>
+                <span class="ms-1 d-none d-sm-inline">Submissions</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="nav-link align-middle">
+                <i class="bi bi-person-lines-fill"></i>
+                <span class="ms-1 d-none d-sm-inline">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col py-3">
+        <!--  -->
+        <div class="mid-wrapper">
+          <div class="heading-nav">
+            <h1>About the Journal</h1>
+
+            <div class="breadcrumb-nav">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    About Us
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+
+          <div class="content-wrapper">
+
+            <h2>Focus &amp; Scope</h2>
+            <p class="lead">
+              The International Journal of Pharmacological and Pharmaceutical
+              Innovations (IJPPI) is a peer-reviewed, open access journal
+              dedicated to publishing cutting-edge research across pharmacology
+              and pharmaceutical sciences. IJPPI serves as a platform for
+              academicians, researchers, and industry professionals to share
+              innovations, discoveries, and advancements in drug research,
+              development, and therapeutic applications.
+            </p>
+            <strong>The journal welcomes manuscripts covering a wide spectrum of
+              topics, including but not limited to:</strong>
+            <ul class="list-unstyled">
+              <li>Pharmacological research</li>
+              <li>Pharmaceutical formulation and drug delivery</li>
+              <li>Drug design and discovery</li>
+              <li>Regulatory and clinical studies</li>
+              <li>Biopharmaceutics and pharmacokinetics</li>
+              <li>Pharmacovigilance</li>
+              <li>Herbal/ayurvedic drug innovations</li>
+            </ul>
+            <p>
+              IJPPI publishes Original Research Articles, Review Articles, Short
+              Communications, and Case Studies, ensuring comprehensive coverage
+              of both fundamental and applied research.
+            </p>
+
+            <h3>Publication Frequency</h3>
+            <p>
+              IJPPI will be published quarterly (four issues per year: January,
+              April, July, and October). Special issues may be announced for
+              emerging themes or conference proceedings.
+            </p>
+
+            <h3>Open Access Policy</h3>
+            <p>
+              All content published in IJPPI is freely available online without
+              subscription charges. The journal adheres to the principle that
+              providing open access to research supports global knowledge
+              exchange and accelerates scientific progress. Click here for more
+              details
+            </p>
+            <h3>Peer Review Process</h3>
+            <p>
+              IJPPI follows a double-blind peer review process, where both
+              authors and reviewers remain anonymous to ensure unbiased
+              evaluation.
+            </p>
+            <ol>
+              <li>
+                Manuscript Submission by Author (via Online Submission System)
+              </li>
+              <li>
+                Initial Editorial Screening (Scope, Formatting, Plagiarism
+                Check)
+              </li>
+              <li>Assignment to Section Editor</li>
+              <li>Double-Blind Peer Review Process (Two or More Reviewers)</li>
+              <li>Reviewer Reports Submitted</li>
+              <li>
+                Editorial Decision (Accept / Minor Revision / Major Revision /
+                Reject)
+              </li>
+              <li>Author Revision (if required)</li>
+              <li>Final Acceptance by Editor-in-Chief</li>
+              <li>Copyediting and Typesetting</li>
+              <li>Proofs Sent to Author for Final Approval</li>
+              <li>Final Publication with DOI Assignment and Online Hosting</li>
+            </ol>
+
+            <h3>Publication Ethics</h3>
+            <p>
+              IJPPI strictly follows international ethical standards and COPE
+              (Committee on Publication Ethics) guidelines. Plagiarism,
+              duplicate publication, and unethical practices are not tolerated.
+              Click here for more details
+            </p>
+            <h3>Archival Policy</h3>
+            <p>
+              All published articles are preserved through digital archiving
+              systems to ensure permanent accessibility.
+            </p>
+            <h3>Copyright &amp; Licensing</h3>
+            <p>
+              Authors retain copyright of their work. Articles are published
+              under a Creative Commons Attribution License (CC BY), allowing
+              sharing and reuse with proper citation.
+            </p>
+
+            <h3>Time Durations</h3>
+            <ul>
+              <li>Editorial Screening: 5-7 days</li>
+              <li>Peer Review: 3-4 weeks</li>
+              <li>Final Decision & Publication: 1-2 weeks after acceptance</li>
+            </ul>
+
+            <h3>Acceptance Rate</h3>
+            <p>
+              The journal aims to maintain high-quality standards, with an
+              estimated acceptance rate of 20–25% in the initial years.
+            </p>
+            <h3>Owned &amp; Published By</h3>
+            <p>The journal is owned and published by:</p>
+            <p>
+              Maxosmith Publications (A Subsidiary of Maxosmith (OPC) Pvt. Ltd.,
+              India)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto col-md-3 col-xl-2 p-0 right-nav">
+        <img src="assets/img/journals-img1.jpg" class="w-100" />
+        <br />
+        <br />
+        <img src="assets/img/google-icon.png" width="150px" />
+        <br />
+        <br />
+        <img src="assets/img/grammarly-icon.png" width="150px" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <div class="footer-content">
+      <div class="footer-menu">
+        <img src="./assets/img/ms-logo-s.png" width="60px" />
+        <p>
+          We publish a range of peer-reviewed journals covering fields such as
+          pharmaceutical sciences, medical sciences, health sciences,
+          engineering, and more. Our platform supports researchers in
+          disseminating their findings effectively.
+        </p>
+
+        <div class="follow-up">
+          <strong>Follow Up</strong>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Quick Links</strong>
+        <ul>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Our Journals</a>
+          </li>
+          <li>
+            <a href="#">Publication Ethics</a>
+          </li>
+          <li>
+            <a href="#">Open Access Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Services</strong>
+        <ul>
+          <li>
+            <a href="#">Book Publication</a>
+          </li>
+          <li>
+            <a href="#">Journal Publication</a>
+          </li>
+          <li>
+            <a href="#">Online Subscription</a>
+          </li>
+          <li>
+            <a href="#">Conference Proceedings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Get In Touch</strong>
+        <ul>
+          <li>Contact : +91 8273066581</li>
+          <li>Email : support@mspublication.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy-right">
+      <p>
+        &copy; 2025 All Rights Reserved of Maxosmith Publications, Maxosmith
+        Publications is a division of Maxosmith (OPC) Pvt. Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+
+</html>

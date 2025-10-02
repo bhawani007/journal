@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link href="./css/journal.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="./js/scripts.js"></script> -->
+  <title>MaxoSmith Journal</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/ijppi_logo.png" width="240px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="search-item">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-search" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">MaxoSmith Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Journals</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise With Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscription</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <!-- <div class="dropdown">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="hugenerd"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1 user-name">User_Name</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark text-small shadow"
+                aria-labelledby="dropdownUser1"
+              >
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid wrapper-container">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 p-0 left-nav">
+        <div class="d-flex flex-column align-items-center align-items-sm-start text-white min-vh-100">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link align-middle">
+                <i class="bi bi-house-door"></i>
+                <span class="ms-1 d-none d-sm-inline">Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" class="nav-link align-middle">
+                <i class="bi bi-file-earmark-person"></i>
+                <span class="ms-1 d-none d-sm-inline">About</span></a>
+            </li>
+            <li>
+              <a href="current.html" class="nav-link align-middle">
+                <i class="bi bi-file-earmark-text"></i>
+                <span class="ms-1 d-none d-sm-inline">Current</span>
+              </a>
+            </li>
+            <li>
+              <a href="archives.html" class="nav-link align-middle">
+                <i class="bi bi-archive"></i>
+                <span class="ms-1 d-none d-sm-inline">Archives</span>
+              </a>
+            </li>
+            <li>
+              <a href="authorguidelines.html" class="nav-link align-middle">
+                <i class="bi bi-journal-bookmark-fill"></i>
+                <span class="ms-1 d-none d-sm-inline">Author Guidelines</span>
+              </a>
+            </li>
+            <li>
+              <a href="editorialboard.html" class="nav-link align-middle">
+                <i class="bi bi-journal-album"></i>
+                <span class="ms-1 d-none d-sm-inline">Editorial Board</span>
+              </a>
+            </li>
+            <li>
+              <a href="submissions.html" class="nav-link align-middle">
+                <i class="bi bi-folder-check"></i>
+                <span class="ms-1 d-none d-sm-inline">Submissions</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="nav-link align-middle">
+                <i class="bi bi-person-lines-fill"></i>
+                <span class="ms-1 d-none d-sm-inline">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="mid-wrapper">
+          <div class="heading-nav">
+            <h1>Author Guidelines</h1>
+            <div class="breadcrumb-nav">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Author Guidelines
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+
+
+          <div class="content-wrapper">
+
+            <p>
+              IJPPI is dedicated to building a strong, diverse, and dynamic
+              Editorial and Advisory Board to uphold the highest standards of
+              academic publishing. We welcome applications from experienced
+              researchers, academicians, and professionals with proven expertise
+              in pharmacological and pharmaceutical sciences.
+            </p>
+            <p>
+              Prospective members are encouraged to send their updated CV/Resume
+              to:
+              <a href="mailto:editor.ijppi@mspulication.com">editor.ijppi@mspulication.com</a>.
+            </p>
+            <p>
+              New applicants may initially be invited to serve as
+              reviewers/referees. Based on performance, commitment, and
+              contribution to the peer-review process, they may later be
+              considered for inclusion as Editorial Board Members.
+            </p>
+
+            <div class="editorial-board">
+              <h2>Editor-in-Chief</h2>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <h2>Associate Editors</h2>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <h2>Assistant Editors</h2>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <h2>Editorial Board Members</h2>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="editorial-list">
+                <div class="editorial-photo">
+                  <img src="assets/img/team/team-4.jpg" class="w-100" />
+                </div>
+
+                <div class="editorial-name">
+                  <strong><a href="#">Prof. M. S. Bhatia, India</a></strong>
+                  <p>
+                    (Bharati Vidyapeeth College of Pharmacy, Kolhapur, India)
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:manish.bhatia@bharatividyapeeth.edu">manish.bhatia@bharatividyapeeth.edu</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:editor@ijppsjournal.com">editor@ijppsjournal.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto col-md-3 col-xl-2 p-0 right-nav">
+        <img src="assets/img/journals-img1.jpg" class="w-100" />
+        <br />
+        <br />
+        <img src="assets/img/google-icon.png" width="150px" />
+        <br />
+        <br />
+        <img src="assets/img/grammarly-icon.png" width="150px" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <div class="footer-content">
+      <div class="footer-menu">
+        <img src="./assets/img/ms-logo-s.png" width="60px" />
+        <p>
+          We publish a range of peer-reviewed journals covering fields such as
+          pharmaceutical sciences, medical sciences, health sciences,
+          engineering, and more. Our platform supports researchers in
+          disseminating their findings effectively.
+        </p>
+
+        <div class="follow-up">
+          <strong>Follow Up</strong>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Quick Links</strong>
+        <ul>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Our Journals</a>
+          </li>
+          <li>
+            <a href="#">Publication Ethics</a>
+          </li>
+          <li>
+            <a href="#">Open Access Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Services</strong>
+        <ul>
+          <li>
+            <a href="#">Book Publication</a>
+          </li>
+          <li>
+            <a href="#">Journal Publication</a>
+          </li>
+          <li>
+            <a href="#">Online Subscription</a>
+          </li>
+          <li>
+            <a href="#">Conference Proceedings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Get In Touch</strong>
+        <ul>
+          <li>Contact : +91 8273066581</li>
+          <li>Email : support@mspublication.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy-right">
+      <p>
+        &copy; 2025 All Rights Reserved of Maxosmith Publications, Maxosmith
+        Publications is a division of Maxosmith (OPC) Pvt. Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+
+</html>
