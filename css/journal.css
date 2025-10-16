@@ -157,14 +157,14 @@ body {
       background: linear-gradient(90deg, rgba(94, 57, 251, 1) 0%, rgba(184, 8, 254, 1) 100%);
       color: #fff;
     }
-
   }
-
-
 }
-
 .wrapper-container {
   margin-top: 70px;
+  background-image: url(../assets/img/submissions-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 
 }
 
@@ -649,7 +649,7 @@ label.form-label {
   justify-content: space-between;
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-  background-color: #fff;
+  background-color:rgba(255, 255, 255, 0.6);
   border: 0px;
   padding: 25px 20px;
   border-radius: 6px;
@@ -1049,7 +1049,6 @@ label.form-label {
   justify-content: space-between;
   padding: 0px 0px 20px 0px;
 
-
   .grid-name {
     font-size: 18px;
     font-weight: 600;
@@ -1081,9 +1080,6 @@ label.form-label {
       outline: 0;
     }
   }
-
-
-
 }
 
 .status-bar {
@@ -1097,6 +1093,15 @@ label.form-label {
   .card-body {
     padding: 30px 30px;
   }
+
+  .data-number {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 8px;
+    border-radius: 50px;
+    margin-left: 3px;
+    font-size: 14px;
+  }
+
 
   .card {
     -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
@@ -1178,6 +1183,12 @@ label.form-label {
   min-width: 0;
   /* Prevents overflow issues with long content */
   text-align: left;
+}
+
+.grid-cell.col-actions {
+  text-align: left;
+  display: flex;
+  gap: 10px;
 }
 
 .grid-cell.col-name {
