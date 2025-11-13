@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link href="./css/journal.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="./js/scripts.js"></script> -->
+  <title>MaxoSmith Journal</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/ijppi_logo.png" width="240px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-item">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-search" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">MaxoSmith Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Journals</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise With Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscription</a>
+            </li>
+          </ul>
+          <!--   <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link registration-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login-link" href="login.html">Login</a>
+            </li>
+          </ul> -->
+
+          <div class="dropdown user-dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle" />
+              <span class="mx-1 user-name">User_Name</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid wrapper-container">
+    <div class="row flex-nowrap">
+      <div class="col py-3">
+        <div class="mid-wrapper">
+          <div class="heading-nav">
+            <h1>New Submission</h1>
+            <div class="breadcrumb-nav">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    New Submission
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+          <div class="user-profile row">
+            <fieldset>
+              <legend>Submit an Article</legend>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Progress Tab Bar -->
+                  <div class="progress-tab-bar">
+                    <div class="progress-tab-item">
+                      <a href="#step1" class="progress-tab-link active" data-bs-toggle="tab">
+                        <div class="progress-tab-icon-wrapper">1</div>
+                        <div class="progress-tab-title">Start</div>
+                      </a>
+                    </div>
+                    <div class="progress-tab-item">
+                      <a href="#step2" class="progress-tab-link" data-bs-toggle="tab">
+                        <div class="progress-tab-icon-wrapper">2</div>
+                        <div class="progress-tab-title">Upload Submission</div>
+                      </a>
+                    </div>
+                    <div class="progress-tab-item">
+                      <a href="#step3" class="progress-tab-link" data-bs-toggle="tab">
+                        <div class="progress-tab-icon-wrapper">3</div>
+                        <div class="progress-tab-title">Enter Metadata</div>
+                      </a>
+                    </div>
+                    <div class="progress-tab-item">
+                      <a href="#step4" class="progress-tab-link" data-bs-toggle="tab">
+                        <div class="progress-tab-icon-wrapper">4</div>
+                        <div class="progress-tab-title">Confirmation</div>
+                      </a>
+                    </div>
+                    <div class="progress-tab-item">
+                      <a href="#step5" class="progress-tab-link completed" data-bs-toggle="tab">
+                        <div class="progress-tab-icon-wrapper"><i class="bi bi-check-lg"></i></div>
+                        <div class="progress-tab-title">Final</div>
+                      </a>
+                    </div>
+
+                  </div>
+                  <!-- Bootstrap Progress Bar (Optional, but often used with this pattern) -->
+                  <div class="progress progress-bar-container">
+                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                      aria-valuemin="0" aria-valuemax="100">20%</div>
+                  </div>
+
+                  <!-- Tab Content -->
+                  <div class="tab-content mt-4">
+                    <div class="tab-pane fade show active" id="step1">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <h4>Section</h4>
+                          <select class="form-select" id="sectionId" validation="required" name="sectionId" required=""
+                            aria-required="true" aria-invalid="false">
+                            <option value="0" selected="selected"></option>
+                            <option value="2">Editorial</option>
+                            <option value="18">Original Article(s)</option>
+                            <option value="19">Review Article(s)</option>
+                            <option value="22">Short Communication(s)</option>
+                            <option value="20">Case Study(s)</option>
+                            <option value="21">Letter to Editor</option>
+                            <option value="115">Hypothesis</option>
+                            <option value="117">Innopharm 2 Conference Proceeding</option>
+                          </select>
+                          <em class="sub-label">Articles must be submitted to one of the journal's sections.<span
+                              class="required-dot">*</span></em>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="section">
+                            <span class="filename">Submission Requirements</span>
+                            <label class="description">You must read and acknowledge that you've completed the
+                              requirements below before proceeding.</label>
+                            <ul class="checkbox_and_radiobutton">
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  The submission has not been previously published, nor is it before another journal
+                                  for
+                                  consideration (or an explanation has been provided in Comments to the Editor).
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  The submission was prepared strictly as per Instructions to Authors. Refer latest
+                                  issue of the Journal for formatting or SAMPLE SUBMISSION
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  The text is single-spaced; uses a 12-point font; employs italics, rather than
+                                  underlining (except with URL addresses); and all illustrations, equations, figures
+                                  and
+                                  tables are placed in line with text at the appropriate points under Result and
+                                  Discussion Section, rather than at the end.
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  All the points in SAMPLE SUBMISSION and Instructions to Authors was strictly
+                                  followed
+                                  and rectified.
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  The first name, last name, email and affiliation of all the authors in sentence case
+                                  must be filled during submission step 3.
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+
+                            </ul>
+                            <ul class="checkbox_and_radiobutton">
+                              <label>Addition or Removal of any author will not be entertained after acceptance of
+                                article.</label>
+                              <li>
+                                <label>
+                                  <input type="checkbox" class="form-check-input">
+                                  The name, affiliations, email and field of expertise of at least 2 potential
+                                  reviewers
+                                  must be written under below COMMENTS FOR THE EDITOR box.
+                                </label>
+                                <label class="error">This field is
+                                  required.</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputCity" class="form-label">Comments for the Editor <span
+                                class="required-dot">*</span></label>
+                            <textarea class="form-control message-text"></textarea>
+                          </div>
+                          <ul class="checkbox_and_radiobutton">
+                            <li>
+                              <label>
+                                <input type="checkbox" class="form-check-input">
+                                Yes, I agree to have my data collected and stored according to the <a href="#">privacy
+                                  statement</a>.
+                              </label>
+                              <label id="error" class="error">This field is
+                                required.</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex-container">
+                          <button type="submit" class="btn btn-primary reg-btn" onclick="goToStep(2)"> Save &amp;
+                            Next</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step2">
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="file-btn">
+                            <h4>Files</h4>
+                            <div class="flex-container">
+                              <button type="submit" class="btn btn-primary reg-btn">Add File</button>
+                            </div>
+                          </div>
+                          <label for="formFile" class="form-label">Upload any files the editorial team will need to
+                            evaluate your submission</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+                      </div>
+                      <div class="flex-container">
+                        <button type="submit" class="btn btn-primary cancel-btn "
+                          onclick="goToStep(1)">Previous</button>
+                        <button type="submit" class="btn btn-primary reg-btn" onclick="goToStep(3)">Save &amp;
+                          Next</button>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="step3">
+                      <div class="row form-identity">
+                        <div class="col-md-2 mb-3">
+                          <label for="prefix" class="form-label">Prefix</label>
+                          <input type="text" class="form-control">
+                          <em class="sub-label">Examples: A, The</em>
+                        </div>
+                        <div class="col-md-10 mb-3">
+                          <label for="title" class="form-label">Title <span class="required-dot">*</span></label>
+                          <input type="text" class="form-control">
+                          <label id="error" class="error">This field is
+                            required.</label>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <label for="title" class="form-label">Subtitle</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <label class="form-label">Abstract <span class="required-dot">*</span></label>
+                            <textarea class="form-control message-text"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3 list-contributors">
+                          <div class="filter-search">
+                            <div class="grid-name">List of Contributors</div>
+                            <div class="filter-nav">
+                              <button class="pkpButton"><span aria-hidden="true" class="fa fa-plus"></span> Add
+                                Contributor
+                              </button>
+                            </div>
+                          </div>
+                          <div class="grid-header d-none d-md-flex">
+                            <div class="grid-cell col-name">Name </div>
+                            <div class="grid-cell col-description">E-mail <i class="sort-icon fa-solid fa-sort"></i>
+                            </div>
+                            <div class="grid-cell col-status">Role </div>
+                            <div class="grid-cell col-actions">Primary Contact</div>
+                            <div class="grid-cell col-actions">In Browse Lists</div>
+                          </div>
+                          <div class="grid-scroll">
+                            <!-- Grid Row 1 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <!-- Grid Row 2 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <!-- Grid Row 3 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <!-- Grid Row 4 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <!-- Grid Row 5 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <!-- Grid Row 5 (Approved) -->
+                            <div class="grid-row">
+                              <!-- Added Bootstrap spacing and border for stacked view -->
+                              <div class="grid-cell col-name">
+                                <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                Robindra KumarPandit
+                              </div>
+                              <div class="grid-cell col-description">
+                                <span class="col-label d-md-none">Email :</span>
+                                robindra.42200254@lpu.in
+                              </div>
+                              <div class="grid-cell col-status">
+                                <span class="col-label d-md-none">Role :</span>
+                                Author
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">Primary Contact :</span>
+                                <input type="checkbox">
+                              </div>
+                              <div class="grid-cell col-actions">
+                                <span class="col-label d-md-none">In Browse Lists :</span>
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <h4>Additional Refinements Keywords <span class="required-dot">*</span></h4>
+                          <em class="sub-label"> Add additional information for your submission. Press 'enter' after
+                            each term.</em>
+                          <div class="form-group mt-3">
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputCity" class="form-label">References</label>
+                            <textarea class="form-control message-text"></textarea>
+                          </div>
+                        </div>
+                        <div class="flex-container">
+                          <button type="submit" class="btn btn-primary cancel-btn "
+                            onclick="goToStep(2)">Previous</button>
+                          <button type="submit" class="btn btn-primary reg-btn" onclick="goToStep(4)">Save &amp;
+                            Next</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="step4">
+                      <h4>Step 4: Confirmation</h4>
+                      <p>Your submission has been uploaded and is ready to be sent. You may go back to review andadjust
+                        any of the information you have entered before continuing. When you are ready, click"Finish
+                        Submission".</p>
+                      <div class="flex-container">
+                        <button type="submit" class="btn btn-primary cancel-btn "
+                          onclick="goToStep(3)">Previous</button>
+                        <button type="submit" class="btn btn-primary reg-btn" onclick="goToStep(5)">Finish
+                          Submission</button>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="step5">
+                      <h4>Step 5: Final</h4>
+                      <p>Review your information and confirm your order.</p>
+                      <div class="flex-container">
+                        <button type="submit" class="btn btn-primary cancel-btn "
+                          onclick="goToStep(4)">Previous</button>
+                        <button type="submit" class="btn btn-primary reg-btn" onclick="goToStep(5)">Complete</button>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto col-md-3 col-xl-2 p-0 right-nav">
+        <img src="assets/img/journals-img1.jpg" class="w-100" />
+        <br />
+        <br />
+        <img src="assets/img/google-icon.png" width="150px" />
+        <br />
+        <br />
+        <img src="assets/img/grammarly-icon.png" width="150px" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <div class="footer-content">
+      <div class="footer-menu">
+        <img src="./assets/img/ms-logo-s.png" width="60px" />
+        <p>
+          We publish a range of peer-reviewed journals covering fields such as
+          pharmaceutical sciences, medical sciences, health sciences,
+          engineering, and more. Our platform supports researchers in
+          disseminating their findings effectively.
+        </p>
+
+        <div class="follow-up">
+          <strong>Follow Up</strong>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Quick Links</strong>
+        <ul>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Our Journals</a>
+          </li>
+          <li>
+            <a href="#">Publication Ethics</a>
+          </li>
+          <li>
+            <a href="#">Open Access Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Services</strong>
+        <ul>
+          <li>
+            <a href="#">Book Publication</a>
+          </li>
+          <li>
+            <a href="#">Journal Publication</a>
+          </li>
+          <li>
+            <a href="#">Online Subscription</a>
+          </li>
+          <li>
+            <a href="#">Conference Proceedings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Get In Touch</strong>
+        <ul>
+          <li>Contact : +91 8273066581</li>
+          <li>Email : support@mspublication.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy-right">
+      <p>
+        &copy; 2025 All Rights Reserved of Maxosmith Publications, Maxosmith
+        Publications is a division of Maxosmith (OPC) Pvt. Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="./js/passwordShow.js"></script>
+  <script src="./js/btncollapse.js"></script>
+  <script src="./js/timelinetab.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+
+</html>
