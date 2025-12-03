@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link href="./css/journal.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="./js/scripts.js"></script> -->
+  <title>MaxoSmith Journal</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/ijppi_logo.png" width="240px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-item">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-search" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">MaxoSmith Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Journals</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise With Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscription</a>
+            </li>
+          </ul>
+          <!--   <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link registration-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login-link" href="login.html">Login</a>
+            </li>
+          </ul> -->
+
+          <div class="dropdown user-dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle" />
+              <span class="mx-1 user-name">User_Name</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid wrapper-container">
+    <div class="row flex-nowrap">
+
+      <div class="col py-3">
+        <div class="mid-wrapper">
+          <div class="heading-nav">
+            <h1>Editor Quality</h1>
+          </div>
+          <div class="user-profile row">
+            <fieldset>
+              <legend>Quality</legend>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- 1. OUTER HORIZONTAL TABS -->
+                  <ul class="nav nav-tabs" id="outerTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="workflow-tab" data-bs-toggle="tab" data-bs-target="#workflow"
+                        type="button" role="tab">Workflow</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="publication-tab" data-bs-toggle="tab" data-bs-target="#publication"
+                        type="button" role="tab">Settings (Nested)</button>
+                    </li>
+                  </ul>
+                  <!-- 1. OUTER TAB CONTENT -->
+                  <div class="tab-content border" id="outerTabContent">
+                    <!-- Home Pane -->
+                    <div class="tab-pane fade show active" id="workflow" role="tabpanel">
+
+                      <div class="d-flex align-items-start ver-tabnav">
+                        <!-- Vertical Nav Pills -->
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                          aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-title-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-title" type="button" role="tab">Title &amp; Abstract</button>
+
+                          <button class="nav-link" id="v-pills-contributors-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-contributors" type="button" role="tab">Contributors</button>
+
+                          <button class="nav-link" id="v-pills-metadata-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-metadata" type="button" role="tab">Metadata</button>
+
+                          <button class="nav-link" id="v-pills-references-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-references" type="button" role="tab">References</button>
+
+                          <button class="nav-link" id="v-pills-funding-data-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-funding-data" type="button" role="tab">Funding data</button>
+
+                        </div>
+
+                        <!-- Vertical Tab Content -->
+                        <div class="tab-content w-100" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-title" role="tabpanel">
+                            <h4>Title &amp; Abstract</h4>
+                            <div class="row form-identity">
+                              <div class="col-md-2 mb-3">
+                                <label for="prefix" class="form-label">Prefix</label>
+                                <input type="text" class="form-control">
+                                <em class="sub-label">Examples: A, The</em>
+                              </div>
+                              <div class="col-md-10 mb-3">
+                                <label for="title" class="form-label">Title <span class="required-dot">*</span></label>
+                                <input type="text" class="form-control">
+                                <label id="error" class="error">This field is
+                                  required.</label>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <label for="title" class="form-label">Subtitle</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <label class="form-label">Abstract <span class="required-dot">*</span></label>
+                                  <textarea class="form-control message-text"></textarea>
+                                </div>
+                              </div>
+                              <div class="flex-container">
+                                <button type="submit" class="btn btn-primary reg-btn">Save Now</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-contributors" role="tabpanel">
+                            <div class="row form-identity">
+                              <div class="col-md-12 mb-3">
+                                <div class="list-contributors">
+                                  <div class="filter-search">
+                                    <div class="grid-name">List of Contributors</div>
+                                    <div class="filter-nav">
+                                      <button class="pkpButton"><span aria-hidden="true" class="fa fa-plus"></span> Add
+                                        Contributor
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="grid-header d-none d-md-flex">
+                                    <div class="grid-cell col-name">Name </div>
+                                    <div class="grid-cell col-description">E-mail <i
+                                        class="sort-icon fa-solid fa-sort"></i>
+                                    </div>
+                                    <div class="grid-cell col-status">Role </div>
+                                    <div class="grid-cell col-actions">Primary Contact</div>
+                                    <div class="grid-cell col-actions">In Browse Lists</div>
+                                  </div>
+                                  <div class="grid-scroll">
+                                    <!-- Grid Row 1 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                    <!-- Grid Row 2 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                    <!-- Grid Row 3 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                    <!-- Grid Row 4 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                    <!-- Grid Row 5 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                    <!-- Grid Row 5 (Approved) -->
+                                    <div class="grid-row">
+                                      <!-- Added Bootstrap spacing and border for stacked view -->
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Name :</span> <!-- Label for small screens -->
+                                        Robindra KumarPandit
+                                      </div>
+                                      <div class="grid-cell col-description">
+                                        <span class="col-label d-md-none">Email :</span>
+                                        robindra.42200254@lpu.in
+                                      </div>
+                                      <div class="grid-cell col-status">
+                                        <span class="col-label d-md-none">Role :</span>
+                                        Author
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">Primary Contact :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                      <div class="grid-cell col-actions">
+                                        <span class="col-label d-md-none">In Browse Lists :</span>
+                                        <input type="checkbox">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <h4>Additional Refinements Keywords <span class="required-dot">*</span></h4>
+                                <em class="sub-label"> Add additional information for your submission. Press 'enter'
+                                  after each term.</em>
+                                <div class="form-group mt-3">
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputCity" class="form-label">References</label>
+                                  <textarea class="form-control message-text"></textarea>
+                                </div>
+                              </div>
+                              <div class="flex-container">
+                                <button type="submit" class="btn btn-primary reg-btn">Save Now</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-metadata" role="tabpanel">
+                            <h4>Metadata</h4>
+                            <div class="row form-identity">
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label class="form-label">Keywords <a href="#" class="help-note"><i
+                                        class="fa-solid fa-circle-question"></i></a></label>
+                                  <input type="text" class="form-control" placeholder="">
+                                  <div class="keyword-txt">
+                                    <ul>
+                                      <li><span class="keyword-name">Antibiotics</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Bioassay</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Ecotoxicology</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Dehradun</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Ecotoxicology</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Dehradun</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">High pressure liquid chromatography</span> <a
+                                          href="#" class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="form-label">Subjects <a href="#" class="help-note"><i
+                                        class="fa-solid fa-circle-question"></i></a></label>
+                                  <input type="text" class="form-control" placeholder="">
+                                  <div class="keyword-txt">
+                                    <ul>
+                                      <li><span class="keyword-name">Envioronmental Science</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                      <li><span class="keyword-name">Environmental Chemistry</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="form-label">Supporting Agencies <a href="#" class="help-note"><i
+                                        class="fa-solid fa-circle-question"></i></a></label>
+                                  <input type="text" class="form-control" placeholder="">
+                                  <div class="keyword-txt">
+                                    <ul>
+                                      <li><span class="keyword-name">LOVELY PROFESSIONAL UNIVERSITY</span> <a href="#"
+                                          class="close-keyword"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                  <label class="form-label">Rights <a href="#" class="help-note"><i
+                                        class="fa-solid fa-circle-question"></i></a></label>
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="form-label">Publisher ID <a href="#" class="help-note"><i
+                                        class="fa-solid fa-circle-question"></i></a></label>
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                              <div class="flex-container">
+                                <button type="submit" class="btn btn-primary reg-btn">Save Now</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-references" role="tabpanel">
+                            <h4>References</h4>
+                            <div class="row form-identity">
+                              <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <label class="form-label">Enter each reference on a new line so that they can be
+                                    extracted and recorded separately.</label>
+                                  <textarea class="form-control message-text"></textarea>
+                                </div>
+                              </div>
+                              <div class="flex-container">
+                                <button type="submit" class="btn btn-primary reg-btn">Save Now</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-funding-data" role="tabpanel">
+                            <h4>Funding Data</h4>
+                            <div class="row form-identity">
+                              <div class="col-md-12 mb-3">
+                                <div class="funding-data">
+                                  <div class="grid-header d-none d-md-flex">
+                                    <div class="grid-cell col-name">Funder Name </div>
+                                    <div class="grid-cell col-id">Funder ID<i class="sort-icon fa-solid fa-sort"></i>
+                                    </div>
+                                    <div class="grid-cell col-number">Grant numbers </div>
+                                  </div>
+                                  <div class="grid-scroll">
+                                    <!-- Grid Row 1 (Approved) -->
+
+                                    <!-- <div class="grid-row">                                      
+                                      <div class="grid-cell col-name">
+                                        <span class="col-label d-md-none">Funder Name :</span>
+                                        Funder Name Here
+                                      </div>
+                                      <div class="grid-cell col-id">
+                                        <span class="col-label d-md-none">Funder ID: </span>
+                                        54545456
+                                      </div>
+                                      <div class="grid-cell col-number">
+                                        <span class="col-label d-md-none">Grant numbers :</span>
+                                        10
+                                      </div> 
+                                    </div>   -->
+
+
+                                  </div>
+                                </div>
+
+                                <div class="no-data-funders">No funders</div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Vertical Tab Content -->
+
+                      </div>
+                    </div>
+
+                    <!-- Profile Pane -->
+                    <!-- Settings Pane (CONTAINS NESTED VERTICAL TABS) -->
+                    <div class="tab-pane fade" id="publication" role="tabpanel">
+                      <!-- 2. INNER VERTICAL LAYOUT (Flexbox Container) -->
+                      <div class="d-flex align-items-start ver-tabnav">
+                        <!-- Vertical Nav Pills -->
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                          aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-submission-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-submission" type="button" role="tab">Submission</button>
+
+                          <button class="nav-link" id="v-pills-review-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-review" type="button" role="tab">Review</button>
+
+                          <button class="nav-link" id="v-pills-copyediting-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-copyediting" type="button" role="tab">Copyediting</button>
+
+                          <button class="nav-link" id="v-pills-production-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-production" type="button" role="tab">Production</button>
+
+                        </div>
+
+                        <!-- Vertical Tab Content -->
+                        <div class="tab-content w-100" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-submission" role="tabpanel">
+
+                            <div class="tab-content-box">
+
+                              <div class="filter-search">
+                                <div class="grid-name">Submission Files</div>
+                                <div class="filter-nav">
+                                  <button class="pkpButton"><i class="bi bi-search"></i> Search
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="row form-identity">
+                                <div class="col-md-12 mb-3">
+                                  <div class="submission-file-list">
+                                    <div class="file-details">
+                                      <span class="file-icon"><i class="fa-solid fa-file-word"></i></span>
+                                      <span class="file-number">18250</span>
+                                      <a href="#" class="file-name">MS-3275.docx</a>
+                                    </div>
+
+                                    <div class="file-date">
+                                      October22, 2025
+                                    </div>
+                                    <div class="file-artical">Article Text</div>
+                                  </div>
+                                </div>
+                                <div class="flex-container">
+                                  <button type="submit" class="btn btn-primary reg-btn">Download All Files</button>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-content-box mt-3">
+
+                              <div class="filter-search">
+                                <div class="grid-name">Pre-Review Discussions</div>
+                                <div class="filter-nav">
+                                  <button class="pkpButton">
+                                    Add discussion
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12 mb-3">
+                                  <div class="list-contributors">
+
+                                    <div class="grid-header d-none d-md-flex">
+                                      <div class="grid-cell col-name">Name </div>
+                                      <div class="grid-cell col-description">From
+                                      </div>
+                                      <div class="grid-cell col-status">Last Reply </div>
+                                      <div class="grid-cell col-actions">Replies</div>
+                                      <div class="grid-cell col-actions">Closed</div>
+                                    </div>
+                                    <div class="grid-scroll">
+                                      <!-- Grid Row 1 (Approved) -->
+                                      <div class="grid-row">
+                                        <div class="grid-cell col-name">
+                                          <span class="col-label d-md-none">Name :</span>
+                                          Comments for the Editor
+                                        </div>
+                                        <div class="grid-cell col-description">
+                                          <span class="col-label d-md-none">From :</span>
+                                          omprakashuniyal
+                                          2025-10-13 03:43PM
+                                        </div>
+                                        <div class="grid-cell col-status">
+                                          <span class="col-label d-md-none">Last Reply :</span>
+                                          omprakashuniyal
+                                          2025-11-11 10:36PM
+                                        </div>
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Replies :</span>
+                                          1
+                                        </div>
+
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Closed :</span>
+                                          <input type="checkbox">
+                                        </div>
+                                      </div>
+                                      <!-- Grid Row 2 (Approved) -->
+                                      <div class="grid-row">
+                                        <div class="grid-cell col-name">
+                                          <span class="col-label d-md-none">Name :</span>
+                                          Comments for the Editor
+                                        </div>
+                                        <div class="grid-cell col-description">
+                                          <span class="col-label d-md-none">From :</span>
+                                          omprakashuniyal
+                                          2025-10-13 03:43PM
+                                        </div>
+                                        <div class="grid-cell col-status">
+                                          <span class="col-label d-md-none">Last Reply :</span>
+                                          omprakashuniyal
+                                          2025-11-11 10:36PM
+                                        </div>
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Replies :</span>
+                                          1
+                                        </div>
+
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Closed :</span>
+                                          <input type="checkbox">
+                                        </div>
+                                      </div>
+                                      <!-- Grid Row 3 (Approved) -->
+                                      <div class="grid-row">
+                                        <div class="grid-cell col-name">
+                                          <span class="col-label d-md-none">Name :</span>
+                                          Comments for the Editor
+                                        </div>
+                                        <div class="grid-cell col-description">
+                                          <span class="col-label d-md-none">From :</span>
+                                          omprakashuniyal
+                                          2025-10-13 03:43PM
+                                        </div>
+                                        <div class="grid-cell col-status">
+                                          <span class="col-label d-md-none">Last Reply :</span>
+                                          omprakashuniyal
+                                          2025-11-11 10:36PM
+                                        </div>
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Replies :</span>
+                                          1
+                                        </div>
+
+                                        <div class="grid-cell col-actions">
+                                          <span class="col-label d-md-none">Closed :</span>
+                                          <input type="checkbox">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-review" role="tabpanel">
+                            <h5>Review</h5>
+                            <p>Here you can change your username and email.</p>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-copyediting" role="tabpanel">
+                            <h5>Copyediting</h5>
+                            <p>Input fields for old and new passwords would go here.</p>
+                          </div>
+
+                          <div class="tab-pane fade" id="v-pills-production" role="tabpanel">
+                            <h5>Production</h5>
+                            <p>Toggle your email and push notification settings here.</p>
+                          </div>
+                        </div>
+                        <!-- End Vertical Tab Content -->
+                      </div>
+                      <!-- End Inner Vertical Layout -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <div class="footer-content">
+      <div class="footer-menu">
+        <img src="./assets/img/ms-logo-s.png" width="60px" />
+        <p>
+          We publish a range of peer-reviewed journals covering fields such as
+          pharmaceutical sciences, medical sciences, health sciences,
+          engineering, and more. Our platform supports researchers in
+          disseminating their findings effectively.
+        </p>
+
+        <div class="follow-up">
+          <strong>Follow Up</strong>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Quick Links</strong>
+        <ul>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Our Journals</a>
+          </li>
+          <li>
+            <a href="#">Publication Ethics</a>
+          </li>
+          <li>
+            <a href="#">Open Access Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Services</strong>
+        <ul>
+          <li>
+            <a href="#">Book Publication</a>
+          </li>
+          <li>
+            <a href="#">Journal Publication</a>
+          </li>
+          <li>
+            <a href="#">Online Subscription</a>
+          </li>
+          <li>
+            <a href="#">Conference Proceedings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <strong>Get In Touch</strong>
+        <ul>
+          <li>Contact : +91 8273066581</li>
+          <li>Email : support@mspublication.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy-right">
+      <p>
+        &copy; 2025 All Rights Reserved of Maxosmith Publications, Maxosmith
+        Publications is a division of Maxosmith (OPC) Pvt. Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="./js/passwordShow.js"></script>
+  <script src="./js/btncollapse.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+
+</html>
