@@ -284,7 +284,7 @@ body {
   h2,
   .h2 {
     font-size: 18px;
-    padding: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
   h3,
@@ -298,6 +298,7 @@ body {
     padding: 10px 0px;
     margin: 0px;
     text-align: justify;
+    color: #000;
   }
 
   strong {
@@ -695,8 +696,8 @@ label.form-label {
 
   legend {
     font-size: 18px;
-    font-weight: 600;
-    padding: 0px 0px 0px 0px;
+    font-weight: 500;
+    padding: 10px 0px 25px 0px;
     margin: 0px;
   }
 
@@ -1029,7 +1030,7 @@ label.form-label {
 .filename {
   display: block;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .description {
@@ -1048,7 +1049,7 @@ label.form-label {
   label {
     display: block;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   li {
